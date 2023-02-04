@@ -1,0 +1,40 @@
+.wrapper {
+  min-height: 100vh;
+  width: 100%;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.start-btn {
+  width: 200px;
+  height: 40px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  background-color: gainsboro;
+  border: 1px solid black;
+}
+
+.start-btn:hover {
+  background-color: aquamarine;
+  color: black;
+  box-shadow: 2px 2px 2px;
+  transition: 1500ms;
+}
+
+.player-walks {
+  font-size: 36px;
+  margin-top: 10px;
+  animation: bline 3s infinite;
+}
+
+@keyframes bline {
+  10% { color: yellow;}
+  40% {color: green;}
+  70% {color: red;}
+  100% {color: blue;}
+}
